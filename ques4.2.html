@@ -1,0 +1,59 @@
+
+<!-- Create a multiline string using template literals showing a 3-line message. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical Assignment 04 - Ques 4.2</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  h1, h3 {
+    text-align: center;
+  }
+
+  pre {
+    font-size: 16px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Practical Assignment 04</h1>
+  <h3>Question 4.2</h3>
+  <p>Create a multiline string using template literals showing a 3-line message.</p>
+
+  <pre id="message"></pre>
+</div>
+
+<script>
+  // Multiline string using template literals
+  let message = `Hello Student,
+Welcome to JavaScript,
+This is a 3-line message.`;
+
+  // Display message
+  document.getElementById("message").innerText = message;
+</script>
+
+</body>
+</html>

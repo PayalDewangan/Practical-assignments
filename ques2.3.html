@@ -1,0 +1,34 @@
+<!-- Create a standard text input field (<input type="text">).
+
+Set the initial border to 1px solid gray.
+
+Apply a transition to the border-color and transform properties, setting the duration to 0.5 seconds.
+
+Use the :focus pseudo-class to style the input when the user clicks into it:
+
+Change the border-color to a bright green. -->
+
+<!-- Use the transform property to slightly rotate the input by 1.5 degrees (e.g., rotate(1deg)). -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type="text"] {
+  border: 1px solid gray;
+  padding: 10px;
+  transition: border-color 0.4s, transform 0.4s;
+}
+
+input[type="text"]:focus {
+  border-color: brightgreen;
+  transform: rotate(1deg);
+  outline: none;
+}
+</style>
+</head>
+<body>
+
+<input type="text" placeholder="Enter text here">
+
+</body>
+</html>

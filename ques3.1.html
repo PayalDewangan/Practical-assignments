@@ -1,0 +1,66 @@
+<!-- Count how many even and odd numbers are there. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical Assignment 03 - Ques 3.1</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Practical Assignment 03</h1>
+  <h3>Question 3.1</h3>
+  <p>Count how many even and odd numbers are there.</p>
+
+  <p id="result"></p>
+</div>
+
+<script>
+  // Array of numbers
+  let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  let evenCount = 0;
+  let oddCount = 0;
+
+  // Logic to count even and odd numbers
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      evenCount++;
+    } else {
+      oddCount++;
+    }
+  }
+
+  // Display result
+  document.getElementById("result").innerText =
+    "Even Numbers: " + evenCount + " | Odd Numbers: " + oddCount;
+</script>
+
+</body>
+</html>

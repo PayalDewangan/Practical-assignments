@@ -1,0 +1,57 @@
+<!-- Add a click event to a button that changes the text of a paragraph. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical Assignment 04 - Ques 4.4</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Practical Assignment 04</h1>
+  <h3>Question 4.4</h3>
+  <p>Button click event that changes paragraph text.</p>
+
+  <p id="text">This is the original paragraph text.</p>
+  <button onclick="changeText()">Click Me</button>
+</div>
+
+<script>
+  // Function to change paragraph text on button click
+  function changeText() {
+    document.getElementById("text").innerText =
+      "Paragraph text changed successfully!";
+  }
+</script>
+
+</body>
+</html>

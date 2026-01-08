@@ -1,0 +1,62 @@
+<!-- Find the sum of all numbers in an array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical Assignment 03 - Ques 3.3</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  h1, h3 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Practical Assignment 03</h1>
+  <h3>Question 3.3</h3>
+  <p>Find the sum of all numbers in an array.</p>
+
+  <p><strong>Array:</strong> 10, 20, 30, 40</p>
+  <p id="result"></p>
+</div>
+
+<script>
+  // Array of numbers
+  let numbers = [10, 20, 30, 40];
+
+  let sum = 0;
+
+  // Calculate sum
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+
+  // Display result
+  document.getElementById("result").innerText =
+    "Sum of all numbers: " + sum;
+</script>
+
+</body>
+</html>

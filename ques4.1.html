@@ -1,0 +1,57 @@
+<!-- Write an arrow function isEven(num) that returns true if a number is even. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical Assignment 04 - Ques 4.1</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  h1, h3 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Practical Assignment 04</h1>
+  <h3>Question 4.1</h3>
+  <p>Write an arrow function <strong>isEven(num)</strong> that returns true if a number is even.</p>
+
+  <p id="result"></p>
+</div>
+
+<script>
+  // Arrow function to check even number
+  const isEven = (num) => num % 2 === 0;
+
+  // Test the function
+  let number = 12;
+
+  // Display result
+  document.getElementById("result").innerText =
+    "Is " + number + " even? : " + isEven(number);
+</script>
+
+</body>
+</html>

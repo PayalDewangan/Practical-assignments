@@ -1,0 +1,60 @@
+<!-- Merge two arrays using the spread operator. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical Assignment 04 - Ques 4.3</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  h1, h3 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Practical Assignment 04</h1>
+  <h3>Question 4.3</h3>
+  <p>Merge two arrays using the spread operator.</p>
+
+  <p><strong>Array 1:</strong> 1, 2, 3</p>
+  <p><strong>Array 2:</strong> 4, 5, 6</p>
+  <p id="result"></p>
+</div>
+
+<script>
+  // Two arrays
+  let array1 = [1, 2, 3];
+  let array2 = [4, 5, 6];
+
+  // Merge using spread operator
+  let mergedArray = [...array1, ...array2];
+
+  // Display result
+  document.getElementById("result").innerText =
+    "Merged Array: " + mergedArray.join(", ");
+</script>
+
+</body>
+</html>

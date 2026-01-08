@@ -1,0 +1,45 @@
+<!-- Create a container <div> with the class flex-container. Inside, place three small boxes (inner <div>s) labeled A, B, and C.
+
+Use display: flex on the flex-container to place the boxes side-by-side.
+
+Use justify-content to place space between the boxes.
+
+Use a Media Query to change the layout: When the screen width is 600px or less (@media (max-width: 600px)), change the flex-direction to column so the boxes stack vertically. -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.flex-container div {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div>A</div>
+  <div>B</div>
+  <div>C</div>
+</div>
+
+</body>
+</html>

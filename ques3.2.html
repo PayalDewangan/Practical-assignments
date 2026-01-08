@@ -1,0 +1,58 @@
+<!-- Remove duplicate values from an array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical Assignment 03 - Ques 3.2</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  h1, h3 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Practical Assignment 03</h1>
+  <h3>Question 3.2</h3>
+  <p>Remove duplicate values from an array.</p>
+
+  <p><strong>Original Array:</strong> 1, 2, 3, 2, 4, 1, 5</p>
+  <p id="result"></p>
+</div>
+
+<script>
+  // Original array with duplicates
+  let numbers = [1, 2, 3, 2, 4, 1, 5];
+
+  // Remove duplicates using Set
+  let uniqueNumbers = [...new Set(numbers)];
+
+  // Display result
+  document.getElementById("result").innerText =
+    "Array after removing duplicates: " + uniqueNumbers.join(", ");
+</script>
+
+</body>
+</html>
